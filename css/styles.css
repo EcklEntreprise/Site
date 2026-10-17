@@ -508,18 +508,12 @@ section[id] {
   min-width: 0;
 }
 
-.field > span,
-.slots legend {
+.field > span {
   color: var(--ink-soft);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-.slots legend::after {
-  content: " *";
-  color: var(--gold-deep);
 }
 
 .field.is-required > span::after {
@@ -554,8 +548,7 @@ section[id] {
 
 .field input:focus,
 .field select:focus,
-.field textarea:focus,
-.slot input:focus-visible + span {
+.field textarea:focus {
   outline: 2px solid var(--gold);
   outline-offset: 1px;
   border-color: var(--gold);
@@ -565,49 +558,6 @@ section[id] {
 .field select:user-invalid,
 .field textarea:user-invalid {
   border-color: #8c3a32;
-}
-
-.slots {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  min-width: 0;
-}
-
-.slot-options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.7rem;
-  margin-top: 0.4rem;
-}
-
-.slot {
-  position: relative;
-  cursor: pointer;
-}
-
-.slot input {
-  position: absolute;
-  opacity: 0;
-  inset: 0;
-}
-
-.slot span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 3.1rem;
-  border: 1px solid #d9d0c2;
-  background: white;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.78rem;
-}
-
-.slot input:checked + span {
-  border-color: var(--gold-deep);
-  background: #f6efe2;
-  color: var(--ink);
 }
 
 .consent {
@@ -723,7 +673,6 @@ section[id] {
   .wordmark { letter-spacing: 0.04em; }
   .wordmark-sub { letter-spacing: 0.24em; font-size: 0.82rem; }
   .header-phone { letter-spacing: 0.08em; }
-  .slot-options { grid-template-columns: 1fr; }
   .button--block { width: 100%; }
 }
 

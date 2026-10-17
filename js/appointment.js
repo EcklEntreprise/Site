@@ -16,8 +16,6 @@
  *   "service": "visite-devis | renovation | amenagement | embellissement",
  *   "city": "Cognac",
  *   "address": "",
- *   "preferredDate": "2026-11-03",
- *   "timeSlot": "matin | apres-midi",
  *   "message": "",
  *   "consent": true,
  *   "source": "site"
@@ -34,17 +32,8 @@
   var statusEl = document.querySelector("#form-status");
   var submitButton = document.querySelector("#submit-appointment");
   var phoneInput = form.querySelector("#phone");
-  var dateInput = form.querySelector("#preferred-date");
   var serviceSelect = form.querySelector("#service");
   var defaultLabel = submitButton.textContent;
-
-  function todayIso() {
-    var now = new Date();
-    var local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
-    return local.toISOString().slice(0, 10);
-  }
-
-  dateInput.min = todayIso();
 
   function setStatus(message, state) {
     statusEl.textContent = message;
@@ -111,8 +100,6 @@
       service: String(data.get("service") || "").trim(),
       city: String(data.get("city") || "").trim(),
       address: String(data.get("address") || "").trim(),
-      preferredDate: String(data.get("preferredDate") || "").trim(),
-      timeSlot: String(data.get("timeSlot") || "").trim(),
       message: String(data.get("message") || "").trim(),
       consent: data.get("consent") === "on",
       source: "site"
@@ -180,7 +167,6 @@
         }
         form.reset();
         syncService("");
-        dateInput.min = todayIso();
         setStatus("Demande envoyée. Antoine Eckl vous recontacte pour confirmer le rendez-vous.", "success");
       })
       .catch(function (error) {
