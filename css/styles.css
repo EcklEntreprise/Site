@@ -180,6 +180,11 @@ section[id] {
   height: auto;
 }
 
+.wordmark-lockup {
+  width: fit-content;
+  text-align: center;
+}
+
 .wordmark {
   margin: 0.4rem 0 0;
   font-family: var(--serif);
@@ -195,7 +200,9 @@ section[id] {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.46em;
+  padding-left: 0.46em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .gold-line {

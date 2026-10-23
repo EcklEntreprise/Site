@@ -13,7 +13,7 @@
  *   "lastName": "Martin",
  *   "phone": "06 12 34 56 78",
  *   "email": "camille.martin@email.fr",
- *   "service": "visite-devis | renovation | amenagement | embellissement",
+ *   "service": "visite-devis | renovation-complete | electricite | plomberie | cloisonnage",
  *   "city": "Cognac",
  *   "address": "",
  *   "message": "",

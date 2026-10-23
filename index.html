@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eckl Entreprise — Rénovation d’intérieur</title>
-  <meta name="description" content="Eckl Entreprise, rénovation d’intérieur menée par Antoine Eckl. Demandez un rendez-vous pour rénover, aménager ou embellir.">
+  <meta name="description" content="Eckl Entreprise, rénovation d’intérieur menée par Antoine Eckl. Demandez un rendez-vous pour concevoir, rénover ou embellir.">
   <meta name="theme-color" content="#0c0b0a">
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     "founder": "Antoine Eckl",
     "email": "eckl.entreprise@gmail.com",
     "telephone": "+33612592807",
-    "description": "Rénovation d’intérieur. Rénover, aménager, embellir.",
+    "description": "Rénovation d’intérieur. Conception, rénover, embellir.",
     "url": "https://github.com/EcklEntreprise/Site"
   }
   </script>
@@ -67,8 +67,10 @@
       <div class="shell hero-grid">
         <div>
           <img class="logo-mark" src="assets/icone.png" alt="">
-          <p class="wordmark" id="hero-title">ECKL</p>
-          <p class="wordmark-sub">Entreprise</p>
+          <div class="wordmark-lockup">
+            <p class="wordmark" id="hero-title">ECKL</p>
+            <p class="wordmark-sub">Entreprise</p>
+          </div>
           <span class="gold-line"></span>
           <p class="eyebrow">Rénovation d’intérieur</p>
         </div>
@@ -109,7 +111,7 @@
               </a>
             </li>
           </ul>
-          <p class="tagline"><i></i> Rénover / Aménager / Embellir <i></i></p>
+          <p class="tagline"><i></i> Conception / Rénover / Embellir <i></i></p>
           <div class="hero-actions">
             <a class="button" href="#rendez-vous">Prendre rendez-vous</a>
             <a class="button button--ghost" href="#prestations">Voir les prestations</a>
@@ -120,7 +122,7 @@
 
     <section class="manifesto" aria-label="Signature">
       <div class="shell">
-        <h2>Rénover <span>/</span> Aménager <span>/</span> Embellir</h2>
+        <h2>Conception <span>/</span> Rénover <span>/</span> Embellir</h2>
         <p>Trois manières d’entrer dans un lieu. On choisit le geste qui correspond à l’état des pièces, puis on le tient jusqu’à la fin du chantier.</p>
       </div>
     </section>
@@ -135,26 +137,34 @@
           <article class="service">
             <p class="service-index">01</p>
             <div>
-              <h3>Rénover</h3>
-              <p>Reprendre une pièce ou un logement : cloisons, sols, peintures, cuisine, salle de bain. Du relevé jusqu’à la livraison.</p>
+              <h3>Rénovation complète</h3>
+              <p>Reprendre le logement dans son ensemble, du relevé jusqu’à la livraison.</p>
             </div>
-            <button type="button" class="text-button" data-service="renovation" aria-pressed="false">Demander un rendez-vous</button>
+            <button type="button" class="text-button" data-service="renovation-complete" aria-pressed="false">Demander un rendez-vous</button>
           </article>
           <article class="service">
             <p class="service-index">02</p>
             <div>
-              <h3>Aménager</h3>
-              <p>Donner un usage précis à un volume. Rangements, circulations, lumière, et le plan avant d’ouvrir les travaux.</p>
+              <h3>Électricité</h3>
+              <p>Tableaux, circuits, prises et éclairages, posés selon le plan du chantier.</p>
             </div>
-            <button type="button" class="text-button" data-service="amenagement" aria-pressed="false">Demander un rendez-vous</button>
+            <button type="button" class="text-button" data-service="electricite" aria-pressed="false">Demander un rendez-vous</button>
           </article>
           <article class="service">
             <p class="service-index">03</p>
             <div>
-              <h3>Embellir</h3>
-              <p>Teintes, matières et finitions, quand le lieu peut changer de tenue sans être reconstruit.</p>
+              <h3>Plomberie</h3>
+              <p>Alimentations, évacuations et appareils, pour la cuisine et la salle de bain.</p>
             </div>
-            <button type="button" class="text-button" data-service="embellissement" aria-pressed="false">Demander un rendez-vous</button>
+            <button type="button" class="text-button" data-service="plomberie" aria-pressed="false">Demander un rendez-vous</button>
+          </article>
+          <article class="service">
+            <p class="service-index">04</p>
+            <div>
+              <h3>Cloisonnage</h3>
+              <p>Monter ou déplacer les cloisons pour redessiner les pièces.</p>
+            </div>
+            <button type="button" class="text-button" data-service="cloisonnage" aria-pressed="false">Demander un rendez-vous</button>
           </article>
         </div>
       </div>
@@ -215,9 +225,10 @@
               <select id="service" name="service" required>
                 <option value="" selected disabled>Choisir</option>
                 <option value="visite-devis">Visite et devis</option>
-                <option value="renovation">Rénover</option>
-                <option value="amenagement">Aménager</option>
-                <option value="embellissement">Embellir</option>
+                <option value="renovation-complete">Rénovation complète</option>
+                <option value="electricite">Électricité</option>
+                <option value="plomberie">Plomberie</option>
+                <option value="cloisonnage">Cloisonnage</option>
               </select>
             </label>
             <label class="field is-required">
@@ -262,7 +273,7 @@
       </div>
     </div>
     <div class="shell">
-      <p class="footer-sign">Rénover / Aménager / Embellir</p>
+      <p class="footer-sign">Conception / Rénover / Embellir</p>
     </div>
     <div class="shell">
       <p class="legal">© 2026 Eckl Entreprise. La demande en ligne est confirmée après échange.</p>
